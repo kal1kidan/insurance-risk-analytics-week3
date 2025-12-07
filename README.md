@@ -2,7 +2,7 @@
 
 ### **10 Academy – AI Mastery Program**
 
-### **Task 1 & Task 2 Completion Summary**
+### **Tasks 1–4 Completion Summary**
 
 ---
 
@@ -168,13 +168,117 @@ dvc pull
 
 ---
 
-# 🎉 **Next Steps (Task 3 Preview)**
+🧪 Task 3 — Hypothesis Testing & Statistical Analysis
+🎯 Goal
 
-Coming next:
+Determine statistically significant factors that influence claim probability, severity, and loss ratios.
 
-* CI/CD pipeline for notebook tests
-* Linting, formatting, type checks
-* DVC pipeline stages
-* Automated report regeneration
+✅ Implemented Steps
 
----
+Formulated hypotheses on risk factors:
+
+Age groups & claim frequency
+
+Vehicle type & claim severity
+
+Security features (alarm/immobilizer) & claim reduction
+
+Conducted statistical tests:
+
+Chi-square tests for categorical variables
+
+T-tests / ANOVA for numeric features across groups
+
+Summarized results and effect sizes
+
+🔍 Key Findings
+
+Certain age groups and citizenship categories have higher claim probabilities
+
+Vehicles with alarm/immobilizer devices show significantly lower claims
+
+Cresta zones show geographic variation in claims and risk
+
+🤖 Task 4 — Predictive Modeling & Insights
+🎯 Goal
+
+Build models to predict the probability of claims and identify high-impact risk factors.
+
+✅ Models & Techniques
+
+Logistic Regression
+
+Random Forest Classifier
+
+Feature importance analysis
+
+Cross-validation to evaluate performance
+
+🔍 Key Insights
+
+Age, vehicle type, and security features are top predictors
+
+Loss ratios and premiums can be adjusted dynamically based on risk
+
+Model outputs inform both marketing segmentation and pricing strategy
+
+📈 Actionable Recommendations
+
+Targeted Marketing
+
+Promote policies to low-risk demographics and regions
+
+Upsell security devices to mitigate risk
+
+Dynamic Pricing Strategy
+
+Adjust premiums based on predictive risk factors
+
+Incorporate vehicle features, model year, and security status
+
+Cross-Selling Opportunities
+
+Offer tracking devices or alarms to high-risk segments
+
+⚠️ Limitations & Future Work
+
+Non-numeric columns required encoding → some nuance lost
+
+External factors like economic conditions or seasonal effects not included
+
+Rare events may reduce model accuracy
+
+Future Work:
+
+Time-series analysis for seasonal trends
+
+Advanced machine learning models (XGBoost, Gradient Boosting)
+
+Integrate external datasets (traffic, weather, economy)
+
+📝 Task Status
+Task	Status	Description
+Task 1.2 – EDA & Statistics	✔️ Completed	Full EDA + insights + plots
+Task 2 – DVC & Pipeline Setup	✔️ Completed	Reproducible data tracking
+Task 3 – Hypothesis Testing	✔️ Completed	Statistical analysis of risk
+Task 4 – Predictive Modeling	✔️ Completed	Claim prediction & feature insights
+🧾 How to Reproduce This Project Locally
+git clone https://github.com/kal1kidan/insurance-risk-analytics-week3.git
+cd insurance-risk-analytics-week3
+
+# create virtual environment
+python -m venv .venv
+source .venv/Scripts/activate  # Windows: .venv\Scripts\activate
+
+pip install -r requirements.txt
+
+# retrieve version-controlled data
+dvc pull
+
+🎉 Next Steps
+
+CI/CD pipeline for automated notebook tests
+
+DVC pipeline stages for data preprocessing, EDA, and modeling
+
+Automated dashboards for leadership review
