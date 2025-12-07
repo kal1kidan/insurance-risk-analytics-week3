@@ -1,0 +1,4 @@
+[core]
+    remote = localstorage
+['remote "localstorage"']
+    url = C:/Users/kalki/OneDrive/Desktop/week3/insurance-risk-analytics-week3/dvc_storage
